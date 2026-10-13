@@ -1,7 +1,24 @@
 import { render, screen } from '@testing-library/react'
-import { App } from './App'
+import { Providers } from './providers'
+import { BookingPage } from '@/features/booking/BookingPage'
+import type { BookingsApi } from '@/api/bookingsApi'
 
-test('renders heading', () => {
-  render(<App />)
+test('renders heading and the empty state', async () => {
+  const api: BookingsApi = {
+    list: async () => [],
+    create: async () => {
+      throw new Error('unused')
+    },
+    update: async () => {
+      throw new Error('unused')
+    },
+    remove: async () => {},
+  }
+  render(
+    <Providers api={api}>
+      <BookingPage />
+    </Providers>,
+  )
   expect(screen.getByRole('heading', { name: 'Бронирование переговорной' })).toBeInTheDocument()
+  expect(await screen.findByText('На эту дату бронирований нет')).toBeInTheDocument()
 })
