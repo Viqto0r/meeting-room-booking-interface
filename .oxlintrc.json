@@ -16,6 +16,7 @@
     ],
     "react/react-in-jsx-scope": "off",
     "typescript/no-explicit-any": "error",
+    "no-underscore-dangle": "off",
     "no-console": [
       "warn",
       {
@@ -30,6 +31,12 @@
     ]
   },
   "overrides": [
+    {
+      "files": ["scripts/**", "e2e/**"],
+      "rules": {
+        "no-console": "off"
+      }
+    },
     {
       "files": [
         "src/features/**",
@@ -46,11 +53,17 @@
             "patterns": [
               {
                 "group": ["**/mocks/**", "@/mocks/**", "msw", "msw/*"],
-                "message": "UI/API layers must not import mocks (SPEC \u00a76)."
+                "message": "UI/API layers must not import mocks (SPEC §6)."
               }
             ]
           }
         ]
+      }
+    },
+    {
+      "files": ["**/*.test.ts", "**/*.test.tsx"],
+      "rules": {
+        "no-restricted-imports": "off"
       }
     }
   ],
