@@ -1,0 +1,36 @@
+API: http://localhost:3001   T=2026-10-13 D=2026-10-14 Y=2026-10-12
+PASS A01  GET returns bookings sorted by start
+PASS A02  GET with missing or invalid date -> 400
+PASS A03  POST valid -> 201
+PASS A04  POST malformed bodies -> 400
+PASS A05  POST unaligned start -> 422 NOT_ALIGNED
+PASS A06  POST outside working hours -> 422 OUT_OF_WORKING_HOURS
+PASS A07  POST start >= end -> 422 START_NOT_BEFORE_END
+PASS A08  POST too short / too long
+PASS A09  POST boundary bookings -> 201
+PASS A10  POST on a past date -> 422 PAST_DATE
+PASS A11  POST today vs clock (strict boundary)
+PASS A12  title length and trimming
+PASS A13  POST overlapping -> 409 with conflicts
+PASS A14  touching intervals are allowed
+PASS A15  PATCH own booking, no self-conflict (R7)
+PASS A16  PATCH title only
+PASS A21  PATCH empty title removes it
+PASS A22  PATCH validates the merged result
+PASS A24  PATCH {} and unknown fields
+PASS A17  PATCH into a neighbour -> 409, conflicts without itself
+PASS A18  unknown id -> 404
+PASS A19  PATCH moves to another date
+PASS A20  PATCH move into an occupied slot -> 409
+PASS A23  ongoing/past bookings are locked (422 BOOKING_LOCKED)
+PASS A25  DELETE then DELETE again
+PASS A26  invalid interval is not masked by OVERLAP
+PASS A27  failNext 500 on GET; dev endpoints do not spend it
+PASS A28  network failure drops the connection
+PASS A29  forceConflictNext -> 409 and a real foreign booking
+PASS A30  raceProbability 1 on POST/PATCH keeps the store consistent
+PASS A31  latencyMs applies to /api/bookings only
+PASS A33  reset with and without seed
+PASS A32  every error response matches ApiErrorBody (checked on all requests above)
+----
+33/33 passed
