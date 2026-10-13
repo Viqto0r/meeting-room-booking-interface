@@ -1,0 +1,90 @@
+[
+  {
+    "id": "E01",
+    "title": "latency 1500: скелетон + aria-busy, затем брони",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E01-skeleton-1280.png", "E01-data-1280.png"],
+    "consoleErrors": [],
+    "seconds": 2.2
+  },
+  {
+    "id": "E02",
+    "title": "дата без броней: пустое состояние + CTA",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E02-empty-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E03",
+    "title": "failNext GET×2 → ErrorState → «Повторить»",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E03-error-1280.png"],
+    "consoleErrors": [],
+    "seconds": 1.1
+  },
+  {
+    "id": "E04",
+    "title": "← / → / Сегодня / «Показать дату»: брони, ?date=, reload",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E05",
+    "title": "?date=abc и ?date=2026-02-30 → сегодняшняя дата, без ошибок",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E06",
+    "title": "прошедшая дата: бейдж, «Новая бронь» aria-disabled, просмотр",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E06-past-date-1280.png", "E06-past-view-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E07",
+    "title": "рефетч при latency 1500: данные на месте + «Обновление…»",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E07-refreshing-1280.png"],
+    "consoleErrors": [],
+    "seconds": 2.1
+  },
+  {
+    "id": "E08",
+    "title": "смена даты при latency 1500: приглушение, клики заблокированы",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E08-dimmed-1280.png"],
+    "consoleErrors": [],
+    "seconds": 1.8
+  }
+]

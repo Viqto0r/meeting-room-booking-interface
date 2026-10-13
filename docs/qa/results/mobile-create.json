@@ -1,0 +1,200 @@
+[
+  {
+    "id": "E10",
+    "title": "«Новая бронь» → время → название → «Создать»",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E10-form-initial-375.png", "E10-created-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.7
+  },
+  {
+    "id": "E11",
+    "title": "границы дня: 09:00 … 17:30, для 17:30 единственное окончание 18:00",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E11-last-slot-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E12",
+    "title": "длительность для начала 10:00: 10:30…12:00 с подписями",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E13",
+    "title": "касание: 11:00–12:00 и 09:00–10:00 при брони 10:00–11:00",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E14",
+    "title": "занято / меньше 30 мин свободно в опциях",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E14-busy-options-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E15",
+    "title": "сегодня, now = 10:07: начала с 10:15, штриховка и линия «сейчас»",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E15-today-1007-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E16",
+    "title": "now = 10:15:30 и 10:15:00.000: первое начало 10:30",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E17",
+    "title": "now = 17:30: «Новая бронь» disabled, клик по таймлайну ничего не открывает, CTA скрыт",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E17-day-over-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E18",
+    "title": "будущий день занят целиком: «На эту дату нет свободного времени»",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E18-fully-booked-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E19",
+    "title": "название: 100 / 101 / пробелы / « abc »",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 1.2
+  },
+  {
+    "id": "E20",
+    "title": "двойной клик и Enter×2 по «Создать» при latency 1500: один POST",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E20-submitting-375.png"],
+    "consoleErrors": [],
+    "seconds": 11
+  },
+  {
+    "id": "E21",
+    "title": "клик по ячейке 14:00 при брони 14:30; 14:15 заблокирована",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E22",
+    "title": "изменённая форма → ячейка / бронь / «Новая бронь» / смена даты → ConfirmDiscardDialog",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E22-discard-dialog-375.png"],
+    "consoleErrors": [],
+    "seconds": 1.5
+  },
+  {
+    "id": "E22b",
+    "title": "изменённая форма → beforeunload запрашивает подтверждение, неизменённая — нет",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E23",
+    "title": "«Новая бронь» при брони 09:00–10:00: 10:00–11:00, форма не изменена",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E23-form-initial-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E24",
+    "title": "автокоррекция окончания: 11:00 сохраняет 11:30, 11:15 → 12:00",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E24-end-adjusted-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E25",
+    "title": "create: смена «Даты брони» двигает дату страницы",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E15b",
+    "title": "DevPanel «Зафиксировать время» 10:07 воспроизводит E15 без Playwright-часов",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.5
+  }
+]

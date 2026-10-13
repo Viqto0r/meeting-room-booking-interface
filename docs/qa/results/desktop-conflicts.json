@@ -1,0 +1,101 @@
+[
+  {
+    "id": "E50",
+    "title": "forceConflictNext: alert, «Обновляем…» → «Список обновлён», значения сохранены",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E50-before-submit-1280.png", "E50-409-refreshing-1280.png", "E50-409-1280.png"],
+    "consoleErrors": [],
+    "seconds": 3.6
+  },
+  {
+    "id": "E51",
+    "title": "после 409 выбрать другое время → успех, alert и подсветка исчезли",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E52",
+    "title": "DevPanel: гонка 100% → POST 409; PATCH 10:00–11:00 → 11:30 → 409, пересечений нет",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E52-devpanel-race-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.9
+  },
+  {
+    "id": "E53",
+    "title": "две вкладки, обновление выключено: B создаёт, A отправляет → поведение E50",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E53-409-two-tabs-1280.png"],
+    "consoleErrors": [],
+    "seconds": 3.6
+  },
+  {
+    "id": "E54",
+    "title": "обновление включено: visibilitychange в A → рефетч без отправки, ошибка интервала",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E54-409-before-submit-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E55",
+    "title": "POST 500: сообщение, данные сохранены, повтор успешен",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E55-500-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.7
+  },
+  {
+    "id": "E56",
+    "title": "POST сетевая ошибка: текст про соединение, данные сохранены",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E56-network-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E57",
+    "title": "409 + рефетч падает: «Не удалось обновить список» + «Повторить»",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E57-409-refresh-failed-1280.png"],
+    "consoleErrors": [],
+    "seconds": 1.3
+  },
+  {
+    "id": "E58",
+    "title": "после каждой ошибки мутации в requestLog есть GET нужной даты",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 3.5
+  }
+]

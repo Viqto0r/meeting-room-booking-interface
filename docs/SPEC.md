@@ -356,7 +356,7 @@ createHandlers({ repo, sim, clock }): RequestHandler[]
 
 ### 5.4. Запуск MSW в браузере
 
-- `main.tsx`: если `import.meta.env.VITE_USE_MOCKS !== 'false'`, то `const { worker } = await import('./mocks/browser')` (dynamic import), затем `await worker.start({ onUnhandledRequest: 'bypass' })`. После старта выставляется `window.__mswReady = true`, затем рендер.
+- `main.tsx`: если `import.meta.env.VITE_USE_MOCKS !== 'false'`, то `const { worker } = await import('./mocks/browser')` (dynamic import), затем `await worker.start({ onUnhandledFrame: 'bypass' })`. После старта выставляется `window.__mswReady = true`, затем рендер.
 - Dynamic import нужен, чтобы при выключенных mocks `msw` и handlers не попадали в бандл.
 - DevPanel рендерится по тому же флагу.
 - `public/mockServiceWorker.js` коммитится. В продакшен-деплое mocks **включены**.
@@ -783,7 +783,7 @@ _Серверные ошибки и конфликты_
 | E51          | После E50 выбрать другое время → отправить                                                                 | Успех, alert и подсветка исчезли                                                                                                                    |
 | E52          | DevPanel: вероятность гонки 100% → создать; затем PATCH с расширением 10:00–11:00 → 11:30                  | 409 в обоих случаях. При PATCH «чужая» бронь 11:00–11:30, пересечений в хранилище нет                                                               |
 | E53 `@smoke` | Две страницы, тумблер обновления выключен. A заполняет форму, B создаёт бронь на то же время, A отправляет | Поведение E50                                                                                                                                       |
-| E54          | То же, тумблер включён. В A `document.dispatchEvent(new Event('visibilitychange'))`                        | A перезапросил список без отправки. Форма сохранила данные и показывает ошибку интервала                                                            |
+| E54          | То же, тумблер включён. В A `document.dispatchEvent(new Event('visibilitychange', { bubbles: true }))`     | A перезапросил список без отправки. Форма сохранила данные и показывает ошибку интервала                                                            |
 | E55          | `failNext {kind:'500', method:'POST', count:1}`                                                            | Сообщение, данные сохранены, повтор успешен                                                                                                         |
 | E56          | `failNext {kind:'network', method:'POST', count:1}`                                                        | Текст про соединение, данные сохранены                                                                                                              |
 | E57          | 409 + рефетч падает (`failNext` GET × 2 сразу после `forceConflictNext`)                                   | «Не удалось обновить список» + «Повторить»                                                                                                          |

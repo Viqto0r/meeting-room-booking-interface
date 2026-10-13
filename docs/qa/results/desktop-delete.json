@@ -1,0 +1,46 @@
+[
+  {
+    "id": "E40",
+    "title": "«Удалить» → «Отмена»: фокус по умолчанию на «Отмена»",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E40-delete-dialog-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E41",
+    "title": "«Удалить» → подтвердить: toast, брони нет, после reload тоже",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.7
+  },
+  {
+    "id": "E42",
+    "title": "удалена во второй вкладке → удалить в первой: «Бронь уже была удалена»",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E43",
+    "title": "DELETE 500: ошибка в диалоге, бронь на месте, повтор успешен",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E43-delete-error-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.5
+  }
+]

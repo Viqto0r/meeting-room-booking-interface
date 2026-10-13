@@ -1,0 +1,90 @@
+[
+  {
+    "id": "E66",
+    "title": "DnD: перетаскивание брони меняет время (шаг 15 мин), клик по-прежнему открывает форму",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 1.2
+  },
+  {
+    "id": "E67",
+    "title": "DnD: на занятое время нельзя, Esc отменяет, идущие брони не перетаскиваются",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E67-drag-invalid-1280.png"],
+    "consoleErrors": [],
+    "seconds": 2.2
+  },
+  {
+    "id": "E68",
+    "title": "DnD: ошибка сервера при сохранении — toast, бронь на месте",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E69",
+    "title": "тёмная тема: переключатель, сохранение после reload, axe",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E69-dark-list-1280.png", "E69-dark-409-1280.png"],
+    "consoleErrors": [],
+    "seconds": 1.7
+  },
+  {
+    "id": "E70",
+    "title": "форма создания: смена «Даты брони» не стирает введённое (D1), прошлая дата не тупик (D2)",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E71",
+    "title": "DnD: причина отказа в превью («время уже прошло») и toast при сбросе",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E72",
+    "title": "DnD: оптимистичное обновление — новое время сразу, откат при ошибке, без скачков",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 11.5
+  },
+  {
+    "id": "E73",
+    "title": "раскладка не прыгает при появлении/исчезновении полосы прокрутки и при диалоге",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  }
+]

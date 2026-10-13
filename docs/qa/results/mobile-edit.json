@@ -1,0 +1,90 @@
+[
+  {
+    "id": "E30",
+    "title": "продлить 10:00–11:00 до 11:30; свои опции не disabled",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E30-edit-form-375.png"],
+    "consoleErrors": [],
+    "seconds": 3.7
+  },
+  {
+    "id": "E31",
+    "title": "продлить в соседнюю бронь: «занято»; сосед появился после открытия — ошибка интервала",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E31-interval-error-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E32",
+    "title": "перенос на свободную дату",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E32-move-note-375.png"],
+    "consoleErrors": [],
+    "seconds": 1.4
+  },
+  {
+    "id": "E33",
+    "title": "перенос на дату с занятым слотом: валидация по целевой дате, submit заблокирован",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.8
+  },
+  {
+    "id": "E34",
+    "title": "очистить название → «Без названия»",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E35",
+    "title": "идущая бронь и бронь прошедшего дня: просмотр",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E35-view-ongoing-375.png", "E35-view-past-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.5
+  },
+  {
+    "id": "E36",
+    "title": "edit открыт, время ушло за start → просмотр с несохранёнными значениями, PATCH не отправлен",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E36-locked-during-edit-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.3
+  },
+  {
+    "id": "E37",
+    "title": "edit → бронь удалена во второй вкладке → «Сохранить» → «Создать новую»",
+    "viewport": "mobile",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E37-not-found-375.png"],
+    "consoleErrors": [],
+    "seconds": 0.6
+  }
+]

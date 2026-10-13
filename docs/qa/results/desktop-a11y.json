@@ -1,0 +1,100 @@
+[
+  {
+    "id": "E60",
+    "title": "создать → reload → бронь на месте",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 0.4
+  },
+  {
+    "id": "E61",
+    "title": "создание, редактирование и удаление только клавиатурой",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E61-focus-new-booking-1280.png", "E61-focus-title-1280.png"],
+    "consoleErrors": [],
+    "seconds": 1.6
+  },
+  {
+    "id": "E62",
+    "title": "axe: список, пусто, ошибка, форма с ошибками, диалоги, DevPanel",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [
+      "axe[список]: critical/serious=0, остальные=0",
+      "axe[devpanel]: critical/serious=0, остальные=0",
+      "axe[форма]: critical/serious=0, остальные=0",
+      "axe[форма с ошибками (409)]: critical/serious=0, остальные=0",
+      "axe[диалог отмены изменений]: critical/serious=0, остальные=0",
+      "axe[диалог удаления]: critical/serious=0, остальные=0",
+      "axe[пусто]: critical/serious=0, остальные=0",
+      "axe[просмотр]: critical/serious=0, остальные=0",
+      "axe[ошибка загрузки]: critical/serious=0, остальные=0"
+    ],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 4.3
+  },
+  {
+    "id": "E63",
+    "title": "ширина 320: нет горизонтального скролла, блоки ≥ 44px; при < 1024 панель над таймлайном и в фокусе",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E63-w320-list-320.png", "E63-w320-form-320.png", "E63-w320-409-320.png"],
+    "consoleErrors": [],
+    "seconds": 1.1
+  },
+  {
+    "id": "E63",
+    "title": "ширина 375: нет горизонтального скролла, блоки ≥ 44px; при < 1024 панель над таймлайном и в фокусе",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E63-w375-list-375.png", "E63-w375-form-375.png", "E63-w375-409-375.png"],
+    "consoleErrors": [],
+    "seconds": 1.1
+  },
+  {
+    "id": "E63",
+    "title": "ширина 768: нет горизонтального скролла, блоки ≥ 44px; при < 1024 панель над таймлайном и в фокусе",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E63-w768-list-768.png", "E63-w768-form-768.png", "E63-w768-409-768.png"],
+    "consoleErrors": [],
+    "seconds": 1.2
+  },
+  {
+    "id": "E63",
+    "title": "ширина 1280: нет горизонтального скролла, блоки ≥ 44px; при < 1024 панель над таймлайном и в фокусе",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": ["E63-w1280-list-1280.png", "E63-w1280-form-1280.png", "E63-w1280-409-1280.png"],
+    "consoleErrors": [],
+    "seconds": 0.7
+  },
+  {
+    "id": "E64",
+    "title": "prefers-reduced-motion: reduce — анимаций нет",
+    "viewport": "desktop",
+    "status": "✅",
+    "failures": [],
+    "notes": [],
+    "shots": [],
+    "consoleErrors": [],
+    "seconds": 2
+  }
+]

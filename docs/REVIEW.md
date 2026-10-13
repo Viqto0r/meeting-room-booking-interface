@@ -93,5 +93,8 @@
 
 Заполняет агент-исполнитель: что в спецификации оказалось технически неверным, как проверено и что изменено.
 
-| #   | Что | Проверка | Изменение |
-| --- | --- | -------- | --------- |
+| #   | Что                                                               | Проверка                                                                                                                                                         | Изменение                                                                                               |
+| --- | ----------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------- |
+| 1   | §5.4: `worker.start({ onUnhandledRequest })`                      | `msw@3`: в `StartOptions` (`node_modules/msw/lib/browser/index.d.ts`, `shared-options.d.ts`) опция называется `onUnhandledFrame`; `tsc` отклонил старое имя      | В §5.4 и `main.tsx` — `onUnhandledFrame: 'bypass'`                                                      |
+| 2   | §9.2 E54: `document.dispatchEvent(new Event('visibilitychange'))` | Playwright на сборке: событие без `bubbles` — 0 рефетчей, с `{ bubbles: true }` — 1 (TanStack Query v5 слушает `window`, настоящий `visibilitychange` всплывает) | В E54 событие отправляется с `bubbles: true`                                                            |
+| 3   | §6/T04: `mocks/storage.ts`                                        | UI-часы и mock-handlers должны читать один ключ override из `localStorage`, а `mocks` для UI импортировать нельзя                                                | `KeyValueStorage` и часы вынесены в `shared/storage.ts`, `shared/clockOverride.ts`; mocks используют их |
