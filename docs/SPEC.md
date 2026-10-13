@@ -256,7 +256,7 @@ export const httpBookingsApi: BookingsApi;          // fetch-based
   - разбирает тело ошибки в `ApiError`;
   - превращает `TypeError` из `fetch` в `ApiError{status:0, code:'NETWORK'}`.
 - Ответы при разборе проверяются zod-схемами. Несовпадение (например, HTML вместо JSON) → `ApiError{code:'INTERNAL'}` и `console.error`.
-- UI не импортирует `fetch`, `msw` и `mocks/*`. ESLint это обеспечивает: `no-restricted-imports` запрещает `mocks/**` для `features/**`, `app/**` и `api/**`.
+- UI не импортирует `fetch`, `msw` и `mocks/*`. oxlint это обеспечивает: `no-restricted-imports` запрещает `mocks/**` для `features/**`, `app/**` и `api/**`.
 - Переход на реальный API: `VITE_USE_MOCKS=false` + `VITE_API_BASE_URL`. Код UI не меняется.
 
 ### 4.4. Слой запросов (`src/api/queries.ts`)
@@ -421,9 +421,9 @@ docs/        SPEC.md TASKS.md REVIEW.md qa/REPORT.md qa/screenshots/ ai-chat.md
 - `dev` → `shared`; с сервером общается только по HTTP.
 - `app` → всё, кроме `mocks`.
 - `mocks` → `domain`, `shared`.
-- Правило «никто из UI не импортирует `mocks`» проверяется ESLint `no-restricted-imports`. Исключение — `main.tsx` (dynamic import).
+- Правило «никто из UI не импортирует `mocks`» проверяется oxlint `no-restricted-imports` (`.oxlintrc.json`). Исключение — `main.tsx` (dynamic import).
 
-TypeScript: `strict`, `noUncheckedIndexedAccess`, без `any`. ESLint: typescript-eslint, react-hooks, jsx-a11y. Prettier.
+TypeScript: `strict`, `noUncheckedIndexedAccess`, без `any`. Линтер — oxlint (шаблон Vite 8; плагины typescript, react, jsx-a11y, import, vitest). Prettier.
 
 ---
 

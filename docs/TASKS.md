@@ -51,11 +51,11 @@ T06 стоит сразу после mock-сервера, до UI: ошибки 
 
 ---
 
-## T01. Инициализация · P0
+## T01. Инициализация · P0 · ✅ выполнено (коммит 5d94a31)
 
 - Vite (react-ts), `git init` (remote `origin` уже задан), `.gitignore` (в том числе `playwright-report/`, `test-results/`).
 - TS: `strict`, `noUncheckedIndexedAccess`, alias `@/`.
-- Tailwind. ESLint: typescript-eslint, react-hooks, jsx-a11y, а также `no-restricted-imports` для `mocks/**` (SPEC §6). Prettier.
+- Tailwind. oxlint (typescript, react, jsx-a11y, import, vitest) + `no-restricted-imports` для `mocks/**` (SPEC §6). Prettier.
 - Зависимости (версии фиксируются):
   - `@tanstack/react-query@5`, `react-hook-form`, `@hookform/resolvers`, `zod`;
   - `@radix-ui/react-alert-dialog`, `sonner`, `lucide-react`;
@@ -87,7 +87,7 @@ T06 стоит сразу после mock-сервера, до UI: ошибки 
 - zod-разбор ответов. `TypeError` → `NETWORK`.
 - `BookingsApi` + `httpBookingsApi` + `ApiProvider`.
 
-**Готово, когда:** unit-тест `http.ts` на разбор ошибки 409, на `NETWORK` и на HTML вместо JSON проходит; ESLint не находит импорта `mocks` в `api/`.
+**Готово, когда:** unit-тест `http.ts` на разбор ошибки 409, на `NETWORK` и на HTML вместо JSON проходит; oxlint не находит импорта `mocks` в `api/`.
 
 ## T04. Ядро mock-сервера · P0
 
